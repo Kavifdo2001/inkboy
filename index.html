@@ -95,6 +95,21 @@
       z-index: 2;
     }
 
+    
+.gallery-art {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-art .tattoo-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
     /* ========== CUSTOM CURSOR ========== */
     #cursor {
       position: fixed;
@@ -1842,15 +1857,7 @@
       <!-- Gallery items with SVG tattoo art -->
       <div class="gallery-item reveal" data-cat="blackgrey" onclick="openLightbox(this)">
         <div class="gallery-art">
-          <svg class="tattoo-svg" viewBox="0 0 200 300" fill="none" stroke="#c0c0c0" stroke-width="1">
-            <path
-              d="M100 30 C120 30 145 50 155 80 C165 110 160 145 145 170 C130 195 115 215 100 270 C85 215 70 195 55 170 C40 145 35 110 45 80 C55 50 80 30 100 30Z" />
-            <path
-              d="M100 70 C115 70 128 82 132 100 C136 118 130 138 120 155 C110 172 105 185 100 220 C95 185 90 172 80 155 C70 138 64 118 68 100 C72 82 85 70 100 70Z"
-              opacity="0.5" />
-            <circle cx="100" cy="110" r="20" opacity="0.4" />
-            <path d="M80 105 L120 115 M85 115 L115 105" opacity="0.6" />
-          </svg>
+          <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
           <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(20,20,20,0.3),rgba(8,8,8,0.5))">
           </div>
         </div>
@@ -1868,59 +1875,33 @@
 
       <div class="gallery-item reveal" data-cat="fineline" onclick="openLightbox(this)">
         <div class="gallery-art">
-          <svg class="tattoo-svg" viewBox="0 0 200 200" fill="none" stroke="#d0d0d0" stroke-width="0.6">
-            <circle cx="100" cy="100" r="75" stroke-dasharray="4 4" />
-            <circle cx="100" cy="100" r="55" />
-            <path d="M100 25 L100 175 M25 100 L175 100" />
-            <path d="M47 47 L153 153 M153 47 L47 153" opacity="0.5" />
-            <circle cx="100" cy="100" r="15" />
-            <circle cx="100" cy="100" r="5" fill="#c0c0c0" />
-          </svg>
+          <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
           <div style="position:absolute;inset:0;background:rgba(8,8,8,0.4)"></div>
         </div>
         <div class="gallery-overlay">
-          <div class="view-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              width="20" height="20">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg></div>
+          <div class="view-icon">
+            <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
+          </div>
           <h4>Geometric Circle</h4><span>Fine Line</span>
         </div>
       </div>
 
       <div class="gallery-item reveal" data-cat="minimal" onclick="openLightbox(this)">
         <div class="gallery-art">
-          <svg class="tattoo-svg" viewBox="0 0 200 200" fill="none" stroke="#aaa" stroke-width="0.8">
-            <path d="M100 40 L140 120 L60 120 Z" />
-            <path d="M100 60 L128 110 L72 110 Z" opacity="0.5" />
-            <path d="M100 30 L100 160" stroke-dasharray="2 6" />
-            <circle cx="100" cy="155" r="4" fill="#888" />
-            <path d="M60 40 Q80 35 100 40 Q120 35 140 40" stroke-dasharray="3 3" opacity="0.5" />
-          </svg>
+          <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
           <div style="position:absolute;inset:0;background:rgba(8,8,8,0.45)"></div>
         </div>
         <div class="gallery-overlay">
-          <div class="view-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              width="20" height="20">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg></div>
+          <div class="view-icon">
+            <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
+          </div>
           <h4>Minimal Triangle</h4><span>Minimalist</span>
         </div>
       </div>
 
       <div class="gallery-item reveal" data-cat="sleeve" onclick="openLightbox(this)">
         <div class="gallery-art">
-          <svg class="tattoo-svg" viewBox="0 0 150 350" fill="none" stroke="#b0b0b0" stroke-width="0.8">
-            <path
-              d="M75 20 C95 20 110 40 112 70 C114 100 108 130 100 160 C92 190 88 220 85 260 C82 300 80 320 75 340 C70 320 68 300 65 260 C62 220 58 190 50 160 C42 130 36 100 38 70 C40 40 55 20 75 20Z" />
-            <path d="M55 80 Q75 70 95 80 Q85 95 75 90 Q65 95 55 80Z" fill="rgba(100,100,100,0.3)" />
-            <path d="M50 130 Q75 120 100 130" opacity="0.6" />
-            <path d="M45 170 Q75 158 105 170" opacity="0.5" />
-            <path d="M50 210 Q75 198 100 210" opacity="0.4" />
-            <circle cx="75" cy="240" r="18" opacity="0.4" />
-            <path d="M62 240 L88 240 M75 227 L75 253" opacity="0.6" />
-          </svg>
+          <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
           <div style="position:absolute;inset:0;background:rgba(8,8,8,0.4)"></div>
         </div>
         <div class="gallery-overlay">
@@ -1935,42 +1916,26 @@
 
       <div class="gallery-item reveal" data-cat="custom" onclick="openLightbox(this)">
         <div class="gallery-art">
-          <svg class="tattoo-svg" viewBox="0 0 200 200" fill="none" stroke="#c0c0c0" stroke-width="0.8">
-            <path d="M100 20 L120 75 L180 75 L130 110 L150 165 L100 132 L50 165 L70 110 L20 75 L80 75 Z" />
-            <path d="M100 45 L112 82 L150 82 L120 103 L132 140 L100 118 L68 140 L80 103 L50 82 L88 82 Z"
-              opacity="0.4" />
-            <circle cx="100" cy="100" r="12" fill="rgba(139,0,0,0.4)" stroke="#8b0000" />
-          </svg>
+          <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
           <div style="position:absolute;inset:0;background:rgba(8,8,8,0.4)"></div>
         </div>
         <div class="gallery-overlay">
-          <div class="view-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              width="20" height="20">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg></div>
+          <div class="view-icon">
+            <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
+          </div>
           <h4>Star Mandala</h4><span>Custom Art</span>
         </div>
       </div>
 
       <div class="gallery-item reveal" data-cat="blackgrey" onclick="openLightbox(this)">
         <div class="gallery-art">
-          <svg class="tattoo-svg" viewBox="0 0 200 250" fill="none" stroke="#999" stroke-width="0.7">
-            <path
-              d="M100 20 C130 20 155 45 158 75 C161 105 148 130 130 148 C112 166 105 180 100 230 C95 180 88 166 70 148 C52 130 39 105 42 75 C45 45 70 20 100 20Z" />
-            <path d="M85 70 C90 60 110 60 115 70 C120 80 115 95 100 100 C85 95 80 80 85 70Z" opacity="0.5" />
-            <path d="M75 120 Q100 112 125 120" opacity="0.5" />
-            <path d="M80 140 Q100 132 120 140" opacity="0.4" />
-            <circle cx="100" cy="85" r="8" opacity="0.6" />
-          </svg>
+          <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
           <div style="position:absolute;inset:0;background:rgba(8,8,8,0.45)"></div>
         </div>
         <div class="gallery-overlay">
-          <div class="view-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              width="20" height="20">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg></div>
+          <div class="view-icon">
+            <img src="./images/main.JPG" alt="Tattoo artwork" class="tattoo-svg">
+          </div>
           <h4>Feather Drop</h4><span>Black & Grey</span>
         </div>
       </div>
